@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - SmartSaver</title>
+    <link rel="icon" type="image/png" href="../images/logo.png">
+
+
+<link rel="stylesheet" href="../assets/css/navbar.css">
+<link rel="stylesheet" href="../assets/css/feedback.css">
+<link rel="stylesheet" href="../assets/css/footer.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <img src="../images/logo.png" alt="SmartSaver Logo">
+        SmartSaver
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+</div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+
+   
+
+</nav>
+
+<section class="page-content">
+
+    <h1>Feedback</h1>
+
+    <p>
+        Your feedback helps us improve SmartSaver.
+    </p>
+
+</section>
+
+<section class="login-container">
+
+    <h1>Share Your Feedback</h1>
+
+    <form onsubmit="submitFeedback(event)">
+        <label>Name:</label>
+        <input
+            type="text"
+            placeholder="Your Name"
+            required
+        >
+
+        <label>Email:</label>
+        <input
+            type="email"
+            placeholder="Your Email"
+            required
+        >
+
+        <div style="margin:20px 0; font-size:30px;">
+            ⭐⭐⭐⭐⭐
+        </div>
+
+        <label >Feedback:</label>
+        <textarea
+            rows="5"
+            placeholder="Write your feedback..."
+            style="
+            width:100%;
+            padding:15px;
+            border:none;
+            border-radius:10px;
+            background:#334155;
+            color:white;
+            margin-bottom:15px;"
+        ></textarea>
+
+        <button type="submit">
+            Submit Feedback
+        </button>
+
+    </form>
+
+</section>
+
+<section class="page-content">
+
+    <h2>User Reviews</h2>
+
+    <div class="feature-container">
+
+        <div class="feature-card">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>
+                Excellent comparison platform.
+                Easy to use and very helpful.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>
+                Found the best hotel deal quickly.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>⭐⭐⭐⭐</h3>
+            <p>
+                Great design and smooth experience.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="page-content">
+
+    <h2>Why Feedback Matters</h2>
+
+    <div class="feature-container">
+
+        <div class="feature-card">
+            <h3>🚀 Improve Features</h3>
+            <p>Help us build better comparison tools.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>💡 New Ideas</h3>
+            <p>Suggest future SmartSaver features.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🎯 Better Experience</h3>
+            <p>Make SmartSaver more user friendly.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <p>© 2026 SmartSaver. All Rights Reserved.</p>
+    <p>Developed by <strong>Laxman</strong></p>
+</footer>
+
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/api.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,324 @@
+/* ======================================
+   ABOUT PAGE
+====================================== */
+
+.about-section{
+    padding:120px 8% 60px;
+    text-align:center;
+}
+
+.about-section h1{
+    font-size:50px;
+
+    background:linear-gradient(
+    to right,
+    #ffffff,
+    #8b5cf6
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    margin-bottom:20px;
+}
+
+.about-section h2{
+    margin-top:50px;
+    margin-bottom:20px;
+    color:#8b5cf6;
+    font-size:32px;
+}
+
+.about-section p{
+    color:#cbd5e1;
+    line-height:1.8;
+    max-width:1000px;
+    margin:auto;
+}
+
+
+/* ======================================
+   FEATURE CARDS
+====================================== */
+
+.feature-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+    margin-top:40px;
+}
+
+.feature-card{
+
+    background:#1e293b;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 25px rgba(139,92,246,.35);
+}
+
+.feature-card h3{
+
+    color:#8b5cf6;
+
+    margin-bottom:15px;
+}
+
+.feature-card p{
+
+    color:#cbd5e1;
+}
+
+
+/* ======================================
+   DEVELOPER SECTION
+====================================== */
+
+.developer-section{
+
+    padding:50px 8%;
+
+    text-align:center;
+}
+
+.developer-section h2{
+
+    color:#8b5cf6;
+
+    margin-bottom:30px;
+
+    font-size:35px;
+}
+
+.developer-card{
+
+    max-width:800px;
+
+    margin:auto;
+
+    background:#1e293b;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+}
+
+.developer-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 0 25px rgba(139,92,246,.35);
+}
+
+.developer-avatar{
+
+    margin-bottom:20px;
+}
+.developer-avatar img{
+
+    width:200px;
+
+    height:200px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid #8b5cf6;
+
+    max-width:800px;
+
+    margin:auto;
+
+    background:#273757;
+
+    transition:.3s;
+}
+
+.developer-avatar img:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 0 25px rgba(139,92,246,.35);
+}
+
+
+.developer-card h3{
+
+    font-size:30px;
+
+    margin-bottom:10px;
+}
+
+.role{
+
+    color:#8b5cf6;
+
+    font-size:18px;
+
+    margin-bottom:20px;
+}
+
+.developer-details{
+
+    text-align:center;
+
+    margin-top:20px;
+}
+
+.developer-details p{
+
+    margin:10px 0;
+
+    color:#cbd5e1;
+}
+
+
+/* ======================================
+   SOCIAL LINKS
+====================================== */
+
+.developer-links{
+
+    margin-top:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+}
+
+.developer-links a{
+
+    text-decoration:none;
+
+    background:#8b5cf6;
+
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:10px;
+
+    transition:.3s;
+}
+
+.developer-links a:hover{
+
+    background:#6d28d9;
+}
+
+
+/* ======================================
+   FUTURE ENHANCEMENTS
+====================================== */
+
+.page-content{
+
+    padding:50px 8% 80px;
+
+    text-align:center;
+}
+
+.page-content h2{
+
+    color:#8b5cf6;
+
+    margin-bottom:30px;
+
+    font-size:35px;
+}
+
+
+/* ======================================
+   ANIMATION
+====================================== */
+.logo img{
+    animation: floatLogo 3s ease-in-out infinite;
+}
+
+@keyframes floatLogo{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-8px);
+    }
+}
+
+.navbar{
+    backdrop-filter: blur(10px);
+}
+
+.nav-links a{
+    position:relative;
+}
+
+.nav-links a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:2px;
+    background:#00e5ff;
+    transition:0.3s;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+
+/* BOdY ANIMATION */
+body{
+    background: linear-gradient(
+        -45deg,
+        #111c35,
+        #272f42,
+        #111c35,
+        #2b3243
+    );
+
+    background-size:400% 400%;
+    animation:gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+

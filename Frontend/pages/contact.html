@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SmartSaver</title>
+
+<link rel="stylesheet" href="../assets/css/navbar.css">
+<link rel="stylesheet" href="../assets/css/contact.css">
+<link rel="stylesheet" href="../assets/css/footer.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <img src="../images/logo.png" alt="SmartSaver Logo">
+        SmartSaver
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+</div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+
+
+
+</nav>
+
+<section class="page-content">
+
+    <h1>Contact Us</h1>
+
+    <p>
+        We'd love to hear from you. Feel free to contact us anytime.
+    </p>
+
+</section>
+
+<section class="feature-container">
+
+    <div class="feature-card">
+        <h3>📍 Address</h3>
+        <p>Hyderabad, Telangana, India</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>📧 E-mail</h3>
+        <p>birralaxman36@gmail.com</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>📞 Phone</h3>
+        <p>+91 6305153830</p>
+    </div>
+
+</section>
+
+<section class="login-container">
+
+    <h1>Send Message</h1>
+
+    <form onsubmit="submitContact(event)">
+        <label>Name:</label>
+        <input
+            type="text"
+            placeholder="Enter Your Name"
+            required
+        >
+        <label>Email:</label>
+        <input
+            type="email"
+            placeholder="Enter Your Email"
+            required
+        >
+        <label>Message:</label>
+        <textarea
+            rows="5"
+            placeholder="Enter Message"
+            style="
+            width:100%;
+            padding:15px;
+            border:none;
+            border-radius:10px;
+            background:#334155;
+            color:white;
+            margin-bottom:15px;"
+        ></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+</section>
+
+<section class="stats">
+
+    <div class="stat-card">
+        <h2>1000+</h2>
+        <p>Products</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>500+</h2>
+        <p>Hotels</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>300+</h2>
+        <p>Flights</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>10K+</h2>
+        <p>Users</p>
+    </div>
+
+</section>
+
+
+
+
+<footer class="footer">
+
+    <p>© 2026 SmartSaver. All Rights Reserved.</p>
+    <p>Developed by <strong>Laxman</strong></p>
+</footer>
+
+
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/api.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+/* ======================================
+   FLIGHT DETAILS PAGE
+====================================== */
+
+.page-content{
+
+    width:90%;
+
+    margin:120px auto 40px;
+
+    text-align:center;
+}
+
+.page-content h1{
+
+    font-size:45px;
+
+    color:#8b5cf6;
+
+    margin-bottom:15px;
+}
+
+.page-content p{
+
+    color:#cbd5e1;
+
+    font-size:20px;
+}
+
+
+/* ======================================
+   DETAILS CARDS
+====================================== */
+
+.feature-container{
+
+    width:90%;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+}
+
+.feature-card{
+
+    background:#1e293b;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    text-align:center;
+
+    transition:.3s;
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 0 20px rgba(139,92,246,.35);
+}
+
+.feature-card h3{
+
+    color:#8b5cf6;
+
+    margin-bottom:12px;
+
+    font-size:20px;
+}
+
+.feature-card p{
+
+    color:#cbd5e1;
+
+    font-size:17px;
+}
+
+
+/* ======================================
+   TABLE
+====================================== */
+
+table{
+
+    width:100%;
+
+    max-width:900px;
+
+    margin:auto;
+
+    border-collapse:collapse;
+
+    background:#1e293b;
+
+    border-radius:15px;
+
+    overflow:hidden;
+}
+
+th{
+
+    background:#8b5cf6;
+
+    color:white;
+
+    padding:15px;
+}
+
+td{
+
+    padding:15px;
+
+    color:#cbd5e1;
+
+    border-bottom:
+    1px solid rgba(255,255,255,.08);
+}
+
+tr:hover{
+
+    background:#243248;
+}
+
+
+/* ======================================
+   BEST PRICE
+====================================== */
+
+#bestPrice{
+
+    color:#ffffff;
+
+    font-size:24px;
+
+    margin-top:20px;
+}
+
+
+/* ======================================
+   FOOTER
+====================================== */
+
+.footer{
+
+    margin-top:60px;
+}
+
+
+/* ======================================
+   ANIMATION
+====================================== */
+.logo img{
+    animation: floatLogo 3s ease-in-out infinite;
+}
+
+@keyframes floatLogo{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-8px);
+    }
+}
+
+.navbar{
+    backdrop-filter: blur(10px);
+}
+
+.nav-links a{
+    position:relative;
+}
+
+.nav-links a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:2px;
+    background:#00e5ff;
+    transition:0.3s;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+

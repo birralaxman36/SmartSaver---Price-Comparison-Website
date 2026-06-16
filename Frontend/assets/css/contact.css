@@ -1,0 +1,308 @@
+/* ======================================
+   CONTACT PAGE
+====================================== */
+
+.page-content{
+    padding:120px 8% 50px;
+    text-align:center;
+}
+
+.page-content h1{
+    font-size:50px;
+
+    background:linear-gradient(
+    to right,
+    #ffffff,
+    #8b5cf6
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    margin-bottom:20px;
+}
+
+.page-content p{
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+
+/* ======================================
+   CONTACT INFO CARDS
+====================================== */
+
+.feature-container{
+
+    width:90%;
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+}
+
+.feature-card{
+
+    background:#1e293b;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 25px rgba(139,92,246,.35);
+}
+
+.feature-card h3{
+
+    color:#8b5cf6;
+
+    margin-bottom:15px;
+}
+
+.feature-card p{
+
+    color:#cbd5e1;
+}
+
+
+/* ======================================
+   CONTACT FORM
+====================================== */
+
+.login-container{
+
+    width:90%;
+    max-width:700px;
+
+    margin:50px auto;
+
+    background:#1e293b;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.login-container h1{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:#8b5cf6;
+}
+
+.login-container label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:white;
+
+    font-weight:500;
+}
+
+.login-container input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#334155;
+
+    color:white;
+}
+
+.login-container textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#334155;
+
+    color:white;
+
+    resize:none;
+
+    margin-bottom:15px;
+}
+
+.login-container button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#8b5cf6;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.login-container button:hover{
+
+    background:#6d28d9;
+}
+
+
+/* ======================================
+   STATS SECTION
+====================================== */
+
+.stats{
+
+    width:90%;
+
+    margin:60px auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(200px,1fr));
+
+    gap:25px;
+}
+
+.stat-card{
+
+    background:#1e293b;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 25px rgba(139,92,246,.35);
+}
+
+.stat-card h2{
+
+    color:#8b5cf6;
+
+    font-size:35px;
+
+    margin-bottom:10px;
+}
+
+.stat-card p{
+
+    color:#cbd5e1;
+}
+
+
+/* ======================================
+   ANIMATION
+====================================== */
+.logo img{
+    animation: floatLogo 3s ease-in-out infinite;
+}
+
+@keyframes floatLogo{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-8px);
+    }
+}
+
+.navbar{
+    backdrop-filter: blur(10px);
+}
+
+.nav-links a{
+    position:relative;
+}
+
+.nav-links a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:2px;
+    background:#00e5ff;
+    transition:0.3s;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+/* BOdY ANIMATION */
+body{
+    background: linear-gradient(
+        -45deg,
+        #111c35,
+        #272f42,
+        #111c35,
+        #2b3243
+    );
+
+    background-size:400% 400%;
+    animation:gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}

@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Flight Comparison - SmartSaver</title>
+<link rel="icon" type="image/png" href="../images/logo.png">
+
+
+<link rel="stylesheet" href="../assets/css/navbar.css">
+<link rel="stylesheet" href="../assets/css/flights.css">
+<link rel="stylesheet" href="../assets/css/footer.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <img src="../images/logo.png" alt="SmartSaver Logo">
+        SmartSaver
+    </div>
+
+<div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+</div>
+
+<ul class="nav-links" id="navLinks">
+<li><a href="../index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="feedback.html">Feedback</a></li>
+<li class="dropdown">
+        <a href="#">Categories ▼</a>
+
+        <ul class="dropdown-menu">
+            <li><a href="electronics.html">Electronics</a></li>
+            <li><a href="fashions.html">Fashions</a></li>
+            <li><a href="hotels.html">Hotels</a></li>
+       
+        </ul>
+    </li>
+</ul>
+
+
+</nav>
+
+<section class="page-content">
+
+<h1>Flight Comparison</h1>
+
+<p>
+Compare flight prices from MakeMyTrip, Cleartrip and Yatra
+to find the cheapest and fastest flights.
+</p>
+
+</section>
+
+
+<section class="page-search">
+
+    <div class="search-box">
+
+       <input
+        type="text"
+        id="flightSearchInput"
+        style="width:280px; padding:12px 15px;"
+        placeholder="Search Airline, Source, Destination">
+
+        <input type="date">
+
+        <input type="date">
+
+        <input type="number" placeholder="Passengers">
+
+        <button onclick="searchFlights()">
+            Search Flights
+        </button>
+
+    </div>
+
+</section>
+
+<section class="feature-container">
+
+    <div class="feature-card">
+
+        <h3>Airline Filter</h3>
+
+        <select id="airlineFilter" style="width:100%;padding:10px;">
+            <option>All Airlines</option>
+            <option>IndiGo</option>
+            <option>Air India</option>
+            <option>Akasa Air</option>
+            <option>SpiceJet</option>
+        </select>
+
+    </div>
+
+    <div class="feature-card">
+
+        <h3>Price Filter</h3>
+
+        <select id="priceFilter" style="width:100%;padding:10px;">
+            <option>All Prices</option>
+            <option>Below ₹5000</option>
+            <option>₹5000 - ₹10000</option>
+            <option>Above ₹10000</option>
+        </select>
+
+    </div>
+
+    <div class="feature-card">
+
+        <h3>Stops Filter</h3>
+
+        <select id="stopsFilter" style="width:100%;padding:10px;">
+            <option>All</option>
+            <option>Non Stop</option>
+            <option>1 Stop</option>
+            <option>2 Stops</option>
+        </select>
+
+    </div>
+
+    <div class="feature-card">
+
+        <h3>Departure Time</h3>
+
+        <select id="departureFilter" style="width:100%;padding:10px;">
+            <option>All Times</option>
+            <option>Morning</option>
+            <option>Afternoon</option>
+            <option>Evening</option>
+            <option>Night</option>
+        </select>
+
+    </div>
+
+</section>
+
+<div style="text-align:center; margin-top:20px;">
+    <button class="apply-filter-btn"
+            onclick="applyFlightFilters()">
+        Apply Filters
+    </button>
+</div>
+
+<section class="flights-section">
+
+<h2>Popular Flights</h2>
+
+<div id="flights-container" class="card-container"></div>
+
+<div style="text-align:center; margin-top:30px;">
+    <button id="loadMoreBtn">
+        Load More
+    </button>
+</div>
+
+</section>
+
+<footer class="footer">
+
+    <p>© 2026 SmartSaver. All Rights Reserved.</p>
+    <p>Developed by <strong>Laxman</strong></p>
+</footer>
+
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/search.js"></script>
+<script src="../assets/js/api.js"></script>
+
+</body>
+</html>

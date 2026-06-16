@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hotel Comparison - SmartSaver</title>
+<link rel="icon" type="image/png" href="../images/logo.png">
+
+<link rel="stylesheet" href="../assets/css/navbar.css">
+<link rel="stylesheet" href="../assets/css/hotels.css">
+<link rel="stylesheet" href="../assets/css/footer.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <img src="../images/logo.png" alt="SmartSaver Logo">
+        SmartSaver
+    </div>
+
+<div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+</div>
+
+<ul class="nav-links" id="navLinks">
+<li><a href="../index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="feedback.html">Feedback</a></li>
+<li class="dropdown">
+        <a href="#">Categories ▼</a>
+
+        <ul class="dropdown-menu">
+            <li><a href="electronics.html">Electronics</a></li>
+            <li><a href="fashions.html">Fashions</a></li>
+           
+            <li><a href="flights.html">Flights</a></li>
+        </ul>
+    </li>
+</ul>
+
+
+</nav>
+
+<section class="page-content">
+
+<h1>Hotel Comparison</h1>
+
+<p>
+Compare hotel prices from Booking.com, Agoda and MakeMyTrip
+to find the best stay at the best price.
+</p>
+
+
+<section class="page-search">
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="hotelSearchInput"
+            placeholder="Search Hotels or City">
+
+
+            <input type="date">
+
+            <input type="date">
+
+            <input type="number" placeholder="Guests">
+
+        <button onclick="searchHotels()">
+            Search Hotels
+        </button>
+
+    </div>
+</section>
+
+
+<section class="feature-container">
+
+    <div class="feature-card">
+
+        <h3>Location Filter</h3>
+
+        <select id="locationFilter" style="width:100%;padding:10px;">
+            <option>All Locations</option>
+            <option>Hyderabad</option>
+            <option>Mumbai</option>
+            <option>Bangalore</option>
+            <option>Delhi</option>
+            <option>Goa</option>
+        </select>
+
+    </div>
+
+    <div class="feature-card">
+
+        <h3>Price Filter</h3>
+
+        <select id="priceFilter" style="width:100%;padding:10px;">
+            <option>All Prices</option>
+            <option>Below ₹3000</option>
+            <option>₹3000 - ₹7000</option>
+            <option>Above ₹7000</option>
+        </select>
+
+    </div>
+
+    <div class="feature-card">
+
+        <h3>Rating Filter</h3>
+
+        <select id="ratingFilter" style="width:100%;padding:10px;">
+            <option>All Ratings</option>
+            <option>4+</option>
+            <option>4.5+</option>
+        </select>
+
+    </div>
+
+    <div class="feature-card">
+
+        <h3>Amenities Filter</h3>
+
+        <select id="amenitiesFilter" style="width:100%;padding:10px;">
+            <option>All Amenities</option>
+            <option>WiFi</option>
+            <option>Pool</option>
+            <option>Gym</option>
+            <option>Parking</option>
+        </select>
+
+    </div>
+
+</section>
+
+<div style="text-align:center; margin-top:20px;">
+    <button class="apply-filter-btn"
+            onclick="applyHotelFilters()">
+        Apply Filters
+    </button>
+</div>
+
+<section class="products">
+
+<h2>Popular Hotels</h2>
+
+<div id="hotels-container" class="card-container"></div>
+
+
+<div style="text-align:center; margin-top:30px;">
+    <button id="loadMoreBtn">
+        Load More
+    </button>
+</div>
+
+</section>
+
+<footer class="footer">
+
+    <p>© 2026 SmartSaver. All Rights Reserved.</p>
+    <p>Developed by <strong>Laxman</strong></p>
+</footer>
+
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/search.js"></script>
+<script src="../assets/js/api.js"></script>
+
+</body>
+</html>

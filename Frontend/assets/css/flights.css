@@ -1,0 +1,375 @@
+/* ======================================
+   FLIGHTS PAGE
+====================================== */
+
+.page-content{
+    padding:120px 8% 50px;
+    text-align:center;
+}
+
+.page-content h1{
+    font-size:50px;
+
+    background:linear-gradient(
+    to right,
+    #ffffff,
+    #8b5cf6
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    margin-bottom:20px;
+}
+
+.page-content h2{
+    color:#8b5cf6;
+    font-size:35px;
+    margin-bottom:30px;
+}
+
+.page-content p{
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+
+/* ======================================
+   SEARCH SECTION
+====================================== */
+
+.page-search{
+    width:90%;
+    margin:30px auto;
+}
+
+.search-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.search-box input{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#1e293b;
+    color:white;
+    min-width:180px;
+}
+
+.search-box button{
+    padding:15px 25px;
+    border:none;
+    border-radius:10px;
+    background:#8b5cf6;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.search-box button:hover{
+    background:#6d28d9;
+}
+
+
+
+/* ======================================
+   FILTERS
+====================================== */
+
+.feature-container{
+
+    width:90%;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+}
+
+.feature-card{
+
+    background:#1e293b;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    text-align:center;
+
+    transition:.3s;
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 0 20px rgba(139,92,246,.35);
+}
+
+.feature-card h3{
+
+    color:#8b5cf6;
+
+    margin-bottom:15px;
+}
+
+.feature-card select{
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#334155;
+
+    color:white;
+}
+
+
+/* ======================================
+   BUTTONS
+====================================== */
+
+.apply-filter-btn,
+#loadMoreBtn{
+
+    background:#8b5cf6;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 30px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.apply-filter-btn:hover,
+#loadMoreBtn:hover{
+
+    background:#6d28d9;
+
+    transform:translateY(-3px);
+}
+
+
+/* ======================================
+   FLIGHT SECTION
+====================================== */
+
+.flights-section{
+
+    width:90%;
+
+    margin:70px auto;
+}
+
+.flights-section h2{
+
+    text-align:center;
+
+    color:#8b5cf6;
+
+    font-size:35px;
+
+    margin-bottom:30px;
+}
+
+
+/* ======================================
+   HORIZONTAL FLIGHT CARD
+====================================== */
+
+.flight-card{
+
+    background:#1e293b;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    transition:.3s;
+}
+
+.flight-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 25px rgba(139,92,246,.35);
+}
+
+.flight-airline{
+
+    min-width:150px;
+}
+
+.flight-airline h3{
+
+    color:white;
+
+    margin-bottom:8px;
+}
+
+.flight-airline p{
+
+    color:#8b5cf6;
+}
+
+.flight-route{
+
+    text-align:center;
+
+    min-width:250px;
+}
+
+.flight-route h3{
+
+    color:white;
+}
+
+.flight-route p{
+
+    color:#cbd5e1;
+}
+
+.flight-duration{
+
+    text-align:center;
+
+    min-width:120px;
+}
+
+.flight-duration h3{
+
+    color:white;
+}
+
+.flight-duration p{
+
+    color:#cbd5e1;
+}
+
+.flight-price{
+
+    text-align:center;
+
+    min-width:150px;
+}
+
+.flight-price h2{
+
+    color:#ffffff;
+
+    margin-bottom:10px;
+}
+
+.flight-price button{
+
+    background:#8b5cf6;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+}
+
+.flight-price button:hover{
+
+    background:#6d28d9;
+}
+
+
+/* ======================================
+   ANIMATION
+====================================== */
+.logo img{
+    animation: floatLogo 3s ease-in-out infinite;
+}
+
+@keyframes floatLogo{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-8px);
+    }
+}
+
+.navbar{
+    backdrop-filter: blur(10px);
+}
+
+.nav-links a{
+    position:relative;
+}
+
+.nav-links a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:2px;
+    background:#00e5ff;
+    transition:0.3s;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+/* search animation */
+.search-box input{
+    transition: all 0.3s ease;
+}
+
+.search-box input:hover,
+.search-box input:focus{
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(144, 0, 255, 0.956);
+    border-color: #a200ff;
+}
+
+
+
+
+
+
+

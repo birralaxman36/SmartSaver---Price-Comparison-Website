@@ -1,0 +1,366 @@
+/* ======================================
+   PRODUCT DETAILS PAGE
+====================================== */
+
+.details-container{
+
+    width:fit-content;
+
+    margin:120px auto 50px;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:40px;
+
+    align-items:center;
+}
+
+
+/* ======================================
+   PRODUCT IMAGE
+====================================== */
+
+.details-image{
+
+    background:#1e293b;
+
+    padding:10px;
+
+    border-radius:20px;
+
+    border:1p   x solid rgba(255,255,255,.08);
+}
+
+.details-image img{
+
+    width:100%;
+
+    max-height:350px;
+
+    object-fit:fill;
+
+    border-radius:10px;
+}
+
+
+/* ======================================
+   PRODUCT CONTENT
+====================================== */
+
+.details-content{
+
+    background:#202630;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.details-content h2{
+
+    font-size:40px;
+
+    color:#8b5cf6;
+
+    margin-bottom:20px;
+}
+
+.details-content p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+    font-size:17px;
+}
+
+.details-content h3{
+
+    color:white;
+
+    font-size:24px;
+
+    margin-top:10px;
+}
+
+
+/* ======================================
+   PAGE CONTENT
+====================================== */
+
+.page-content{
+
+    width:90%;
+
+    margin:60px auto;
+
+    text-align:center;
+}
+
+.page-content h2{
+
+    font-size:35px;
+
+    color:#8b5cf6;
+
+    margin-bottom:30px;
+}
+
+
+/* ======================================
+   TABLE
+====================================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#1e293b;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.08);
+}
+
+th{
+
+    background:#8b5cf6;
+
+    color:white;
+
+    padding:18px;
+}
+
+td{
+
+    padding:18px;
+
+    color:#cbd5e1;
+
+    border-bottom:
+    1px solid rgba(255,255,255,.08);
+}
+
+tr:hover{
+
+    background:#243248;
+}
+
+
+/* ======================================
+   BEST PRICE
+====================================== */
+
+#bestPrice{
+
+    color:#ffffff;
+
+    font-size:26px;
+
+    margin-top:20px;
+}
+
+
+/* ======================================
+   BUTTON
+====================================== */
+
+.apply-filter-btn{
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#8b5cf6;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.apply-filter-btn:hover{
+
+    background:#6d28d9;
+
+    transform:translateY(-3px);
+}
+
+
+/* ======================================
+   SIMILAR PRODUCTS
+====================================== */
+
+.products{
+
+    width:90%;
+
+    margin:80px auto;
+}
+
+.products h2{
+
+    text-align:center;
+
+    color:#8b5cf6;
+
+    margin-bottom:30px;
+
+    font-size:35px;
+}
+
+.card-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+}
+
+.card{
+
+    background:#1e293b;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 25px rgba(139,92,246,.35);
+}
+
+.card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:contain;
+
+    border-radius:15px;
+
+    margin-bottom:15px;
+}
+
+.card h3{
+
+    color:white;
+
+    margin-bottom:10px;
+}
+
+.card p{
+
+    color:#cbd5e1;
+
+    margin-bottom:15px;
+}
+
+.card button{
+
+    background:#8b5cf6;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.card button:hover{
+
+    background:#6d28d9;
+}
+
+
+/* ======================================
+   FOOTER
+====================================== */
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    border-top:
+    1px solid rgba(255,255,255,.08);
+
+    color:#cbd5e1;
+}
+
+
+/* ======================================
+   ANIMATION
+====================================== */
+.logo img{
+    animation: floatLogo 3s ease-in-out infinite;
+}
+
+@keyframes floatLogo{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-8px);
+    }
+}
+.navbar{
+    backdrop-filter: blur(10px);
+}
+
+.nav-links a{
+    position:relative;
+}
+
+.nav-links a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:2px;
+    background:#00e5ff;
+    transition:0.3s;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+
