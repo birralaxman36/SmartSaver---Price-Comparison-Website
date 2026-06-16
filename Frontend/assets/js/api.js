@@ -1,4 +1,11 @@
 // ======================================
+// BASE URL
+// ======================================
+
+const BASE_URL =
+"https://smartsaver-price-comparison-website-production.up.railway.app";
+
+// ======================================
 // PRODUCTS API
 // ======================================
 const productsContainer =
@@ -6,7 +13,7 @@ document.getElementById("products-container");
 
 if(productsContainer){
 
-    fetch("http://localhost:8080/products")
+    fetch(`${BASE_URL}/products`)
     .then(response => response.json())
     .then(products => {
 
@@ -53,7 +60,7 @@ document.getElementById("fashion-container");
 
 if(fashionContainer){
 
-    fetch("http://localhost:8080/fashion")
+    fetch(`${BASE_URL}/fashion`)
     .then(response => response.json())
     .then(products => {
 
@@ -95,7 +102,7 @@ if(fashionContainer){
 // ======================================
 // HOTELS API
 // ======================================
-fetch("http://localhost:8080/hotels")
+fetch(`${BASE_URL}/hotels`)
 .then(response => response.json())
 .then(hotels => {
 
@@ -184,7 +191,7 @@ function setupLoadMore() {
 // FLIGHTS API
 // ======================================
 
-fetch("http://localhost:8080/flights")
+fetch(`${BASE_URL}/flights`)
 .then(response => response.json())
 .then(flights => {
 
@@ -289,7 +296,7 @@ document.getElementById("hotelName");
 
 if(hotelId && hotelName){
 
-    fetch(`http://localhost:8080/hotels/${hotelId}`)
+    fetch(`${BASE_URL}/hotels/${hotelId}`)
     .then(response => response.json())
     .then(hotel => {
 
@@ -351,7 +358,7 @@ if(hotelId && hotelName){
 
 // loadSimilarHotels()
 
-fetch("http://localhost:8080/hotels")
+fetch(`${BASE_URL}/hotels`)
 .then(response => response.json())
 .then(hotels => {
 
@@ -423,7 +430,7 @@ document.getElementById("productName");
 
 if(productId && productName){
 
-    fetch(`http://localhost:8080/products/${productId}`)
+    fetch(`${BASE_URL}/products/${productId}`)
     .then(response => response.json())
     .then(product => {
 
@@ -489,7 +496,7 @@ if(productId && productName){
 }
 // loadSimilarProducts()
 
-fetch("http://localhost:8080/products")
+fetch(`${BASE_URL}/products`)
 .then(response => response.json())
 .then(products => {
 
@@ -554,7 +561,7 @@ document.getElementById("flightAirline");
 
 if(flightId && flightAirline){
 
-    fetch(`http://localhost:8080/flights/${flightId}`)
+    fetch(`${BASE_URL}/flights/${flightId}`)
     .then(response => response.json())
     .then(flight => {
 
@@ -648,7 +655,7 @@ if(flightId && flightAirline){
 // SIMILAR FLIGHTS
 // ======================================
 
-fetch("http://localhost:8080/flights")
+fetch(`${BASE_URL}/flights`)
 .then(response => response.json())
 .then(flights => {
 
@@ -727,7 +734,7 @@ async function submitContact(event){
     };
 
     const response = await fetch(
-        "http://localhost:8080/contact",
+        `${BASE_URL}/contact`,
         {
             method:"POST",
 
@@ -773,7 +780,7 @@ async function submitFeedback(event){
     };
 
     const response = await fetch(
-        "http://localhost:8080/feedback",
+        `${BASE_URL}/feedback`,
         {
             method:"POST",
 
@@ -821,7 +828,7 @@ async function registerUser(event){
     try{
 
         const response = await fetch(
-            "http://localhost:8080/register",
+            `${BASE_URL}/register`,
             {
                 method:"POST",
                 headers:{
@@ -919,7 +926,7 @@ async function loginUser(event) {
     try {
 
         const response = await fetch(
-            "http://localhost:8080/login",
+            `${BASE_URL}/login`,
             {
                 method: "POST",
                 headers: {
