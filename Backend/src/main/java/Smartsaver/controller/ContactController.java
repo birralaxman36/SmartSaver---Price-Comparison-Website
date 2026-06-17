@@ -4,6 +4,7 @@ import Smartsaver.entity.Contact;
 import Smartsaver.repository.ContactRepository;
 import org.springframework.web.bind.annotation.*;
 
+
 @RestController
 public class ContactController {
 
