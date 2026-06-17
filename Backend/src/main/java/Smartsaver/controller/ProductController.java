@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
+@RequestMapping("/products")
+@CrossOrigin(origins = "https://smartsaver-laxman.netlify.app")
 @RestController
 public class ProductController {
 
