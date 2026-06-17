@@ -61,21 +61,20 @@ VALUES
 ('Hotels'),
 ('Flights');
 
-
 -- show values in categories table
 SELECT * FROM categories;
 
 -- Products Table
 
-CREATE TABLE products(
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    product_name VARCHAR(200) NOT NULL,
-    description TEXT,
+CREATE TABLE products (
+    id INT NOT NULL,
+    category_id INT NOT NULL,
+    description VARCHAR(500),
+    image_url VARCHAR(500),
     price DECIMAL(10,2),
-    rating DECIMAL(2,1),
-    image_url VARCHAR(255),
-    category_id INT,
-    FOREIGN KEY (category_id) REFERENCES categories(id)
+    product_name VARCHAR(255),
+    rating DOUBLE,
+    PRIMARY KEY (id)
 );
 
 DESC products;

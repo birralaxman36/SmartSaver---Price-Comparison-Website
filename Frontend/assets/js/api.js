@@ -1,7 +1,7 @@
 // ======================================
 // BASE URL
 // ======================================
-const BASE_URL = import.meta.env.VITE_API_URL;
+const BASE_URL = "https://smartsaver-price-comparison-website-production.up.railway.app";
 // const BASE_URL =
 // "https://smartsaver-price-comparison-website-production.up.railway.app";
 
