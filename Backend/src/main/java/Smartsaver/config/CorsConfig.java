@@ -17,10 +17,8 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
 
                 registry.addMapping("/**")
-                        .allowedOrigins(
-                            "https://smartsaver-laxman.netlify.app"
-                        )
-                        .allowedMethods("*")
+                        .allowedOrigins("https://smartsaver-laxman.netlify.app")
+                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*");
             }
         };
