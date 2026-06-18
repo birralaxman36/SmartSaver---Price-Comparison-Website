@@ -328,6 +328,125 @@
         line-height:1.5;
     }
 
+/* ======================================
+   FEATURE CARDS
+====================================== */
+
+.feature-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:10px;
+}
+
+.feature-card{
+
+    padding:10px;
+    min-height:90px;
+    border-radius:12px;
+}
+
+.feature-card h3{
+
+    font-size:13px;
+}
+
+.feature-card p{
+
+    font-size:11px;
+}
+
+
+/* ======================================
+   PRODUCT CARDS
+====================================== */
+
+.card-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:10px;
+}
+
+.card{
+
+    padding:10px;
+    border-radius:12px;
+    min-height:220px;
+}
+
+.card img{
+
+    width:100%;
+    height:100px;
+    object-fit:cover;
+}
+
+.card h3{
+
+    font-size:13px;
+    margin:8px 0;
+}
+
+.card p{
+
+    font-size:11px;
+}
+
+.card button{
+
+    padding:8px 12px;
+    font-size:11px;
+}
+
+
+/* ======================================
+   HOTELS CARDS
+====================================== */
+
+#hotels-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:10px;
+}
+
+#hotels-container .card{
+
+    min-height:230px;
+}
+
+#hotels-container .card img{
+
+    height:100px;
+}
+
+
+/* ======================================
+   ELECTRONICS & FASHION
+====================================== */
+
+#products-container,
+#fashion-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:10px;
+}
+    
+    
     /* HERO */
 
     .hero{
