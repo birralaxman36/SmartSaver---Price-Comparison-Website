@@ -123,3 +123,26 @@ function showFeedbackMessage() {
     document.getElementById("feedbackForm")
     .reset();
 }
+
+// ======================================
+// FEEDBACK star
+// ======================================
+function setRating(value){
+
+    document.getElementById("rating")
+    .value = value;
+
+    const stars =
+    document.querySelectorAll(".star");
+
+    stars.forEach((star,index)=>{
+
+        if(index < value){
+            star.classList.add("active");
+        }else{
+            star.classList.remove("active");
+        }
+
+    });
+
+}

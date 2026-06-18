@@ -776,7 +776,10 @@ async function submitFeedback(event){
         document.getElementById("feedbackEmail").value,
 
         message:
-        document.getElementById("feedbackMessage").value
+        document.getElementById("feedbackMessage").value,
+
+        rating:
+    document.getElementById("rating").value
     };
 
     const response = await fetch(

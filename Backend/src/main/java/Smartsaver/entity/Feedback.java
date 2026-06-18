@@ -14,6 +14,8 @@ public class Feedback {
     private String email;
     private String message;
 
+    private Integer rating;
+
     public Integer getId() {
         return id;
     }
@@ -44,5 +46,13 @@ public class Feedback {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public Integer getRating() {
+        return rating;
+    }
+
+    public void setRating(Integer rating) {
+        this.rating = rating;
     }
 }

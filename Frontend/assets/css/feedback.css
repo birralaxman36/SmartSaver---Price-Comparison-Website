@@ -155,17 +155,20 @@
    STAR RATING
 ====================================== */
 
-.rating-stars{
-
-    text-align:center;
-
-    font-size:35px;
-
+.rating-container{
     margin:20px 0;
-
-    color:#facc15;
 }
 
+.star{
+    font-size:40px;
+    cursor:pointer;
+    color:#64748b;
+    transition:.3s;
+}
+
+.star.active{
+    color:#facc15;
+}
 
 /* ======================================
    FEATURE CONTAINER

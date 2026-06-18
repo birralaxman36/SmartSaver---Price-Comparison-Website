@@ -72,9 +72,20 @@
             required
         >
 
-        <div style="margin:20px 0; font-size:30px;">
-            ⭐⭐⭐⭐⭐
-        </div>
+        <div class="rating-container">
+
+    <span class="star" onclick="setRating(1)">★</span>
+    <span class="star" onclick="setRating(2)">★</span>
+    <span class="star" onclick="setRating(3)">★</span>
+    <span class="star" onclick="setRating(4)">★</span>
+    <span class="star" onclick="setRating(5)">★</span>
+
+</div>
+
+<input
+type="hidden"
+id="rating"
+value="0">
 
         <label >Feedback:</label>
         <textarea
