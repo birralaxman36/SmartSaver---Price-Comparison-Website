@@ -119,4 +119,7 @@ function showFeedbackMessage() {
 
     document.getElementById("feedbackStatus")
     .style.marginTop = "15px";
+
+    document.getElementById("feedbackForm")
+    .reset();
 }
