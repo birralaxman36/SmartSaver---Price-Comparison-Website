@@ -794,13 +794,26 @@ async function submitFeedback(event){
 
     if(response.ok){
 
-        alert("Feedback Submitted");
+    document.getElementById("feedbackStatus")
+    .innerHTML =
+    "✅ Thank you for your feedback!";
 
-    }else{
+    document.getElementById("feedbackStatus")
+    .style.color = "#22c55e";
 
-        alert("Submission Failed");
+    document.getElementById("feedbackForm")
+    .reset();
 
-    }
+}else{
+
+    document.getElementById("feedbackStatus")
+    .innerHTML =
+    "❌ Submission Failed";
+
+    document.getElementById("feedbackStatus")
+    .style.color = "red";
+
+}
 }
 
 

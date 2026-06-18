@@ -104,3 +104,19 @@ function toggleMenu() {
     navLinks.classList.toggle("active");
 
 }
+
+// ======================================
+// FEEDBACK RESPONSE
+// ======================================
+function showFeedbackMessage() {
+
+    document.getElementById("feedbackStatus")
+    .innerHTML =
+    "✅ Thank you for your feedback!";
+
+    document.getElementById("feedbackStatus")
+    .style.color = "#22c55e";
+
+    document.getElementById("feedbackStatus")
+    .style.marginTop = "15px";
+}

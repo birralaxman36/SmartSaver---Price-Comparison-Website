@@ -81,30 +81,32 @@ DESC products;
 
 
 -- Hotels Table
-CREATE TABLE hotels(
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    hotel_name VARCHAR(200) NOT NULL,
-    location VARCHAR(200),
+CREATE TABLE hotels (
+    id INT NOT NULL,
+    image_url VARCHAR(500),
+    location VARCHAR(255),
+    hotel_name VARCHAR(255),
     price_per_night DECIMAL(10,2),
-    rating DECIMAL(2,1),
-    image_url VARCHAR(255)
+    rating DOUBLE,
+    PRIMARY KEY (id)
 );
 
 -- Flights Table
 CREATE TABLE flights (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    airline VARCHAR(100),
-    flight_number VARCHAR(50),
+    id INT NOT NULL,
     aircraft VARCHAR(100),
-    source VARCHAR(100),
-    destination VARCHAR(100),
-    departure_time VARCHAR(20),
+    airline VARCHAR(100),
     arrival_time VARCHAR(20),
-    duration VARCHAR(50),
-    stops VARCHAR(50),
-    travel_date VARCHAR(50),
-    price DOUBLE,
-    discount INT
+    departure_time VARCHAR(20),
+    destination VARCHAR(100),
+    discount INT,
+    duration VARCHAR(20),
+    flight_number VARCHAR(20),
+    price DECIMAL(10,2),
+    source VARCHAR(100),
+    stops VARCHAR(20),
+    travel_date VARCHAR(30),
+    PRIMARY KEY (id)
 );
 
 desc flights;
