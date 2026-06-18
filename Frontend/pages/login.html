@@ -51,25 +51,34 @@
            placeholder="Email"
            required>
 
-    <input type="password"
-           id="password"
-           placeholder="Password"
-           required>
+    <div class="password-container">
+
+        <input type="password"
+               id="password"
+               placeholder="Password"
+               required>
+
+        <span id="eye"
+              class="toggle-password"
+              onclick="togglePassword()">
+            👁️
+        </span>
+
+    </div>
 
     <p id="loginMessage"></p>
-
 
     <button type="submit">
         Login
     </button>
 
-<p style="margin-top:20px;">
-    Don't have an account?
+    <p style="margin-top:20px;">
+        Don't have an account?
 
-    <a href="register.html">
-        Register Here
-    </a>
-</p>
+        <a href="register.html">
+            Register Here
+        </a>
+    </p>
 
 </form>
 

@@ -27,6 +27,28 @@ body.login-page{
     color:white;
 }
 
+/* eye password */
+.password-container{
+    position: relative;
+    width: 100%;
+}
+
+.password-container input{
+    width: 100%;
+    padding-right: 45px;
+}
+
+.toggle-password{
+    position: absolute;
+    right: 10px;
+    top: 35%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+
+    font-size: 20px;   /* Increase size */
+    font-weight: bold
+}
 
 /* ======================================
    NAVBAR
